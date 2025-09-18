@@ -51,6 +51,9 @@ namespace ExperCT
                 {
                     MessageBox.Show("T'es connecté");
                     SessionManager.LoginTechnicien(technicienExist);
+                    FrmDashboardTechnicien frmDashboardTechnicien = new FrmDashboardTechnicien();
+                    frmDashboardTechnicien.Show();
+                    this.Hide();
                 }
                 else
                 {
