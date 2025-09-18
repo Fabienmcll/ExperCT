@@ -17,8 +17,6 @@ public partial class ContrôleTechnique
 
     public int IdTechnicien { get; set; }
 
-    public virtual CarteGrise IdCarteGriseNavigation { get; set; } = null!;
-
     public virtual Defaillance IdDefaillanceNavigation { get; set; } = null!;
 
     public virtual Technicien IdTechnicienNavigation { get; set; } = null!;

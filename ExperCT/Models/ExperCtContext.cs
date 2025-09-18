@@ -37,7 +37,7 @@ public partial class ExperCtContext : DbContext
     {
         modelBuilder.Entity<CarteGrise>(entity =>
         {
-            entity.HasKey(e => e.IdCarteGrise).HasName("PK__CarteGri__4DBAD6926DE6FC6C");
+            entity.HasKey(e => e.IdCarteGrise).HasName("PK__CarteGri__4DBAD692A549CAED");
 
             entity.ToTable("CarteGrise");
 
@@ -45,9 +45,7 @@ public partial class ExperCtContext : DbContext
 
             entity.HasIndex(e => e.NumeroImmatriculation, "UQ__CarteGri__F551C8FDA0007139").IsUnique();
 
-            entity.Property(e => e.IdCarteGrise)
-                .ValueGeneratedNever()
-                .HasColumnName("idCarteGrise");
+            entity.Property(e => e.IdCarteGrise).HasColumnName("idCarteGrise");
             entity.Property(e => e.CodeVin)
                 .HasMaxLength(50)
                 .IsUnicode(false)
@@ -92,7 +90,7 @@ public partial class ExperCtContext : DbContext
                 .IsUnicode(false)
                 .HasColumnName("mail");
             entity.Property(e => e.Mdp)
-                .HasMaxLength(50)
+                .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("mdp");
             entity.Property(e => e.Nom)
@@ -121,11 +119,6 @@ public partial class ExperCtContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("numReference");
-
-            entity.HasOne(d => d.IdCarteGriseNavigation).WithMany(p => p.ContrôleTechniques)
-                .HasForeignKey(d => d.IdCarteGrise)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__ContrôleT__idCar__3A81B327");
 
             entity.HasOne(d => d.IdDefaillanceNavigation).WithMany(p => p.ContrôleTechniques)
                 .HasForeignKey(d => d.IdDefaillance)
@@ -158,8 +151,6 @@ public partial class ExperCtContext : DbContext
             entity.HasKey(e => e.IdDefaillance).HasName("PK__Defailla__4AA0D61CE4C4A8BE");
 
             entity.ToTable("Defaillance");
-
-            entity.HasIndex(e => e.Nom, "UQ__Defailla__DF90DC2C3FA9FA42").IsUnique();
 
             entity.Property(e => e.IdCriticite).HasColumnName("idCriticite");
             entity.Property(e => e.IdPointControle).HasColumnName("idPointControle");
@@ -202,7 +193,7 @@ public partial class ExperCtContext : DbContext
 
             entity.Property(e => e.IdTechnicien).HasColumnName("idTechnicien");
             entity.Property(e => e.Mdp)
-                .HasMaxLength(50)
+                .HasMaxLength(500)
                 .IsUnicode(false)
                 .HasColumnName("mdp");
             entity.Property(e => e.Nom)

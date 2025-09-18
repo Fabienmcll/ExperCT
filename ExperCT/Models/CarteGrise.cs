@@ -5,8 +5,6 @@ namespace ExperCT.Models;
 
 public partial class CarteGrise
 {
-    public int IdCarteGrise { get; set; }
-
     public string NumeroImmatriculation { get; set; } = null!;
 
     public string Marque { get; set; } = null!;
@@ -23,7 +21,7 @@ public partial class CarteGrise
 
     public int IdClient { get; set; }
 
-    public virtual ICollection<ContrôleTechnique> ContrôleTechniques { get; set; } = new List<ContrôleTechnique>();
+    public int IdCarteGrise { get; set; }
 
     public virtual Client IdClientNavigation { get; set; } = null!;
 }
