@@ -42,16 +42,17 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Location = new Point(67, 31);
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(160, 40);
             label3.Name = "label3";
-            label3.Size = new Size(271, 20);
+            label3.Size = new Size(166, 25);
             label3.TabIndex = 9;
-            label3.Text = "Me connecter à mon compte technicien";
+            label3.Text = "Espace technicien";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 177);
+            label2.Location = new Point(153, 219);
             label2.Name = "label2";
             label2.Size = new Size(98, 20);
             label2.TabIndex = 8;
@@ -60,7 +61,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(67, 103);
+            label1.Location = new Point(153, 94);
             label1.Name = "label1";
             label1.Size = new Size(42, 20);
             label1.TabIndex = 7;
@@ -68,7 +69,7 @@
             // 
             // txtMotDePasse
             // 
-            txtMotDePasse.Location = new Point(129, 174);
+            txtMotDePasse.Location = new Point(153, 242);
             txtMotDePasse.Name = "txtMotDePasse";
             txtMotDePasse.Size = new Size(193, 27);
             txtMotDePasse.TabIndex = 6;
@@ -76,25 +77,29 @@
             // 
             // txtNom
             // 
-            txtNom.Location = new Point(129, 103);
+            txtNom.Location = new Point(153, 117);
             txtNom.Name = "txtNom";
             txtNom.Size = new Size(193, 27);
             txtNom.TabIndex = 5;
             // 
             // btnConnexion
             // 
-            btnConnexion.Location = new Point(143, 233);
+            btnConnexion.BackColor = SystemColors.HotTrack;
+            btnConnexion.FlatStyle = FlatStyle.Flat;
+            btnConnexion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnConnexion.ForeColor = SystemColors.HighlightText;
+            btnConnexion.Location = new Point(167, 296);
             btnConnexion.Name = "btnConnexion";
-            btnConnexion.Size = new Size(159, 34);
+            btnConnexion.Size = new Size(159, 48);
             btnConnexion.TabIndex = 10;
             btnConnexion.Text = "Me connecter";
-            btnConnexion.UseVisualStyleBackColor = true;
+            btnConnexion.UseVisualStyleBackColor = false;
             btnConnexion.Click += btnConnexion_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(53, 148);
+            label4.Location = new Point(153, 158);
             label4.Name = "label4";
             label4.Size = new Size(60, 20);
             label4.TabIndex = 12;
@@ -103,7 +108,7 @@
             // 
             // txtPrenom
             // 
-            txtPrenom.Location = new Point(129, 141);
+            txtPrenom.Location = new Point(153, 181);
             txtPrenom.Name = "txtPrenom";
             txtPrenom.Size = new Size(193, 27);
             txtPrenom.TabIndex = 11;
@@ -112,7 +117,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(454, 326);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(522, 373);
             Controls.Add(label4);
             Controls.Add(txtPrenom);
             Controls.Add(btnConnexion);

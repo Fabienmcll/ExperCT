@@ -51,27 +51,30 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(33, 83);
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            label1.Location = new Point(33, 90);
             label1.Name = "label1";
-            label1.Size = new Size(131, 20);
+            label1.Size = new Size(123, 20);
             label1.TabIndex = 0;
-            label1.Text = "Date de passage : ";
+            label1.Text = "Date de passage";
             // 
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             label2.Location = new Point(33, 145);
             label2.Name = "label2";
-            label2.Size = new Size(150, 20);
+            label2.Size = new Size(158, 20);
             label2.TabIndex = 1;
             label2.Text = "Numero de réference";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(45, 72);
+            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            label3.Location = new Point(18, 59);
             label3.Name = "label3";
-            label3.Size = new Size(84, 20);
+            label3.Size = new Size(86, 20);
             label3.TabIndex = 2;
             label3.Text = "Défaillance";
             label3.Click += label3_Click;
@@ -79,9 +82,10 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             label4.Location = new Point(33, 39);
             label4.Name = "label4";
-            label4.Size = new Size(114, 20);
+            label4.Size = new Size(122, 20);
             label4.TabIndex = 3;
             label4.Text = "Immatriculation";
             label4.Click += label4_Click;
@@ -89,26 +93,27 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(41, 386);
+            label5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            label5.Location = new Point(59, 396);
             label5.Name = "label5";
-            label5.Size = new Size(78, 20);
+            label5.Size = new Size(82, 20);
             label5.TabIndex = 4;
             label5.Text = "Technicien";
             // 
             // txCarteGrise
             // 
             txCarteGrise.Enabled = false;
-            txCarteGrise.Location = new Point(197, 32);
+            txCarteGrise.Location = new Point(199, 36);
             txCarteGrise.Name = "txCarteGrise";
-            txCarteGrise.Size = new Size(202, 27);
+            txCarteGrise.Size = new Size(305, 27);
             txCarteGrise.TabIndex = 5;
             txCarteGrise.TextChanged += txCarteGrise_TextChanged;
             // 
             // datePassage
             // 
-            datePassage.Location = new Point(200, 83);
+            datePassage.Location = new Point(199, 90);
             datePassage.Name = "datePassage";
-            datePassage.Size = new Size(200, 27);
+            datePassage.Size = new Size(304, 27);
             datePassage.TabIndex = 6;
             // 
             // txtReference
@@ -123,7 +128,7 @@
             // 
             cbDefaliance.DropDownStyle = ComboBoxStyle.DropDownList;
             cbDefaliance.FormattingEnabled = true;
-            cbDefaliance.Location = new Point(135, 72);
+            cbDefaliance.Location = new Point(135, 56);
             cbDefaliance.Name = "cbDefaliance";
             cbDefaliance.Size = new Size(293, 28);
             cbDefaliance.TabIndex = 8;
@@ -132,16 +137,17 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(434, 72);
+            label6.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
+            label6.Location = new Point(519, 64);
             label6.Name = "label6";
-            label6.Size = new Size(122, 20);
+            label6.Size = new Size(129, 20);
             label6.TabIndex = 9;
             label6.Text = "Point de controle";
             // 
             // txPointControle
             // 
             txPointControle.Enabled = false;
-            txPointControle.Location = new Point(573, 70);
+            txPointControle.Location = new Point(654, 59);
             txPointControle.Name = "txPointControle";
             txPointControle.Size = new Size(202, 27);
             txPointControle.TabIndex = 10;
@@ -149,9 +155,10 @@
             // rbDefaillance
             // 
             rbDefaillance.AutoSize = true;
+            rbDefaillance.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             rbDefaillance.Location = new Point(41, 208);
             rbDefaillance.Name = "rbDefaillance";
-            rbDefaillance.Size = new Size(102, 24);
+            rbDefaillance.Size = new Size(104, 24);
             rbDefaillance.TabIndex = 11;
             rbDefaillance.TabStop = true;
             rbDefaillance.Text = "Défalliance";
@@ -161,9 +168,10 @@
             // rbAucuneDefaillance
             // 
             rbAucuneDefaillance.AutoSize = true;
+            rbAucuneDefaillance.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold);
             rbAucuneDefaillance.Location = new Point(199, 208);
             rbAucuneDefaillance.Name = "rbAucuneDefaillance";
-            rbAucuneDefaillance.Size = new Size(157, 24);
+            rbAucuneDefaillance.Size = new Size(163, 24);
             rbAucuneDefaillance.TabIndex = 12;
             rbAucuneDefaillance.TabStop = true;
             rbAucuneDefaillance.Text = "Aucune défailliance";
@@ -173,30 +181,37 @@
             // txtTechnicien
             // 
             txtTechnicien.Enabled = false;
-            txtTechnicien.Location = new Point(163, 379);
+            txtTechnicien.Location = new Point(176, 389);
             txtTechnicien.Name = "txtTechnicien";
-            txtTechnicien.Size = new Size(200, 27);
+            txtTechnicien.Size = new Size(293, 27);
             txtTechnicien.TabIndex = 13;
             txtTechnicien.TextChanged += txtTechnicien_TextChanged;
             // 
             // btnCreer
             // 
-            btnCreer.Location = new Point(683, 425);
+            btnCreer.BackColor = SystemColors.HotTrack;
+            btnCreer.FlatStyle = FlatStyle.Flat;
+            btnCreer.ForeColor = SystemColors.ButtonHighlight;
+            btnCreer.Location = new Point(682, 468);
             btnCreer.Name = "btnCreer";
             btnCreer.Size = new Size(140, 45);
             btnCreer.TabIndex = 14;
             btnCreer.Text = "Créer";
-            btnCreer.UseVisualStyleBackColor = true;
+            btnCreer.UseVisualStyleBackColor = false;
             btnCreer.Click += btnCreer_Click;
             // 
             // btnAnnuler
             // 
-            btnAnnuler.Location = new Point(41, 425);
+            btnAnnuler.BackColor = Color.Firebrick;
+            btnAnnuler.FlatStyle = FlatStyle.Flat;
+            btnAnnuler.ForeColor = SystemColors.ButtonFace;
+            btnAnnuler.Location = new Point(41, 468);
             btnAnnuler.Name = "btnAnnuler";
             btnAnnuler.Size = new Size(140, 45);
             btnAnnuler.TabIndex = 15;
             btnAnnuler.Text = "Annuler";
-            btnAnnuler.UseVisualStyleBackColor = true;
+            btnAnnuler.UseVisualStyleBackColor = false;
+            btnAnnuler.Click += btnAnnuler_Click;
             // 
             // groupBox
             // 
@@ -206,7 +221,7 @@
             groupBox.Controls.Add(txPointControle);
             groupBox.Location = new Point(41, 254);
             groupBox.Name = "groupBox";
-            groupBox.Size = new Size(796, 119);
+            groupBox.Size = new Size(876, 119);
             groupBox.TabIndex = 16;
             groupBox.TabStop = false;
             groupBox.Text = "groupBox1";
@@ -215,7 +230,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(849, 504);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(920, 525);
             Controls.Add(groupBox);
             Controls.Add(btnAnnuler);
             Controls.Add(btnCreer);
@@ -232,6 +248,7 @@
             Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FrmNouveauControle";
+            StartPosition = FormStartPosition.WindowsDefaultBounds;
             Text = "Nouveau contrôle technique";
             Load += FrmNouveauControle_Load;
             groupBox.ResumeLayout(false);

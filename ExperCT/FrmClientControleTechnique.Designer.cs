@@ -47,9 +47,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(238, 9);
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(176, 9);
             label1.Name = "label1";
-            label1.Size = new Size(142, 20);
+            label1.Size = new Size(150, 20);
             label1.TabIndex = 0;
             label1.Text = "Controle technique :";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -57,7 +58,7 @@
             // lblNumRef
             // 
             lblNumRef.AutoSize = true;
-            lblNumRef.Location = new Point(475, 9);
+            lblNumRef.Location = new Point(392, 9);
             lblNumRef.Name = "lblNumRef";
             lblNumRef.Size = new Size(50, 20);
             lblNumRef.TabIndex = 1;
@@ -66,16 +67,17 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(238, 46);
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(176, 46);
             label2.Name = "label2";
-            label2.Size = new Size(86, 20);
+            label2.Size = new Size(91, 20);
             label2.TabIndex = 2;
             label2.Text = "Effectué le :";
             // 
             // lblDatePassage
             // 
             lblDatePassage.AutoSize = true;
-            lblDatePassage.Location = new Point(475, 46);
+            lblDatePassage.Location = new Point(392, 46);
             lblDatePassage.Name = "lblDatePassage";
             lblDatePassage.Size = new Size(50, 20);
             lblDatePassage.TabIndex = 3;
@@ -84,25 +86,27 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 134);
+            label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label3.Location = new Point(163, 134);
             label3.Name = "label3";
-            label3.Size = new Size(113, 20);
+            label3.Size = new Size(119, 20);
             label3.TabIndex = 4;
             label3.Text = "Compte-rendu :";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(50, 184);
+            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(163, 184);
             label4.Name = "label4";
-            label4.Size = new Size(91, 20);
+            label4.Size = new Size(94, 20);
             label4.TabIndex = 5;
             label4.Text = "Défaillance :";
             // 
             // lblDefaillance
             // 
             lblDefaillance.AutoSize = true;
-            lblDefaillance.Location = new Point(158, 184);
+            lblDefaillance.Location = new Point(309, 184);
             lblDefaillance.Name = "lblDefaillance";
             lblDefaillance.Size = new Size(50, 20);
             lblDefaillance.TabIndex = 6;
@@ -111,9 +115,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 226);
+            label5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(163, 226);
             label5.Name = "label5";
-            label5.Size = new Size(129, 20);
+            label5.Size = new Size(137, 20);
             label5.TabIndex = 7;
             label5.Text = "Point de contrôle :";
             label5.TextAlign = ContentAlignment.TopCenter;
@@ -121,7 +126,7 @@
             // lblPointControle
             // 
             lblPointControle.AutoSize = true;
-            lblPointControle.Location = new Point(158, 226);
+            lblPointControle.Location = new Point(309, 226);
             lblPointControle.Name = "lblPointControle";
             lblPointControle.Size = new Size(50, 20);
             lblPointControle.TabIndex = 8;
@@ -130,9 +135,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(331, 184);
+            label6.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(582, 184);
             label6.Name = "label6";
-            label6.Size = new Size(67, 20);
+            label6.Size = new Size(71, 20);
             label6.TabIndex = 9;
             label6.Text = "Criticité :";
             label6.TextAlign = ContentAlignment.TopCenter;
@@ -149,7 +155,7 @@
             // lblCriticite
             // 
             lblCriticite.AutoSize = true;
-            lblCriticite.Location = new Point(404, 184);
+            lblCriticite.Location = new Point(655, 184);
             lblCriticite.Name = "lblCriticite";
             lblCriticite.Size = new Size(50, 20);
             lblCriticite.TabIndex = 11;
@@ -157,20 +163,25 @@
             // 
             // btnFermer
             // 
-            btnFermer.Location = new Point(404, 255);
+            btnFermer.BackColor = Color.Firebrick;
+            btnFermer.FlatStyle = FlatStyle.Flat;
+            btnFermer.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFermer.ForeColor = SystemColors.ButtonHighlight;
+            btnFermer.Location = new Point(392, 334);
             btnFermer.Name = "btnFermer";
-            btnFermer.Size = new Size(100, 29);
+            btnFermer.Size = new Size(133, 37);
             btnFermer.TabIndex = 12;
             btnFermer.Text = "Fermer";
-            btnFermer.UseVisualStyleBackColor = true;
+            btnFermer.UseVisualStyleBackColor = false;
             btnFermer.Click += btnFermer_Click;
             // 
             // lblTechnicien
             // 
             lblTechnicien.AutoSize = true;
+            lblTechnicien.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTechnicien.Location = new Point(745, 9);
             lblTechnicien.Name = "lblTechnicien";
-            lblTechnicien.Size = new Size(105, 20);
+            lblTechnicien.Size = new Size(110, 20);
             lblTechnicien.TabIndex = 13;
             lblTechnicien.Text = "nom - prenom";
             // 
@@ -178,7 +189,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(886, 308);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(886, 408);
             Controls.Add(lblTechnicien);
             Controls.Add(btnFermer);
             Controls.Add(lblCriticite);

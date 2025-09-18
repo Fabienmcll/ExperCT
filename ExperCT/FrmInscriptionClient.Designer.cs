@@ -43,28 +43,32 @@
             // 
             // btnInscription
             // 
-            btnInscription.Location = new Point(145, 185);
+            btnInscription.BackColor = SystemColors.HotTrack;
+            btnInscription.FlatStyle = FlatStyle.Flat;
+            btnInscription.ForeColor = SystemColors.ButtonHighlight;
+            btnInscription.Location = new Point(150, 361);
             btnInscription.Name = "btnInscription";
             btnInscription.Size = new Size(159, 34);
             btnInscription.TabIndex = 5;
             btnInscription.Text = "M'inscrire";
-            btnInscription.UseVisualStyleBackColor = true;
+            btnInscription.UseVisualStyleBackColor = false;
             btnInscription.Click += btnInscription_Click;
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Location = new Point(190, 9);
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(182, 21);
             label3.Name = "label3";
-            label3.Size = new Size(72, 20);
+            label3.Size = new Size(108, 25);
             label3.TabIndex = 15;
-            label3.Text = "M'inscrire";
+            label3.Text = "Inscription";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 155);
+            label2.Location = new Point(136, 275);
             label2.Name = "label2";
             label2.Size = new Size(98, 20);
             label2.TabIndex = 14;
@@ -73,7 +77,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(67, 56);
+            label1.Location = new Point(136, 84);
             label1.Name = "label1";
             label1.Size = new Size(46, 20);
             label1.TabIndex = 13;
@@ -81,7 +85,7 @@
             // 
             // txtMotDePasse
             // 
-            txtMotDePasse.Location = new Point(129, 152);
+            txtMotDePasse.Location = new Point(136, 298);
             txtMotDePasse.Name = "txtMotDePasse";
             txtMotDePasse.Size = new Size(193, 27);
             txtMotDePasse.TabIndex = 4;
@@ -89,7 +93,7 @@
             // 
             // txtMail
             // 
-            txtMail.Location = new Point(129, 53);
+            txtMail.Location = new Point(136, 107);
             txtMail.Name = "txtMail";
             txtMail.Size = new Size(193, 27);
             txtMail.TabIndex = 11;
@@ -97,7 +101,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(67, 89);
+            label4.Location = new Point(136, 147);
             label4.Name = "label4";
             label4.Size = new Size(42, 20);
             label4.TabIndex = 18;
@@ -105,7 +109,7 @@
             // 
             // txtNom
             // 
-            txtNom.Location = new Point(129, 86);
+            txtNom.Location = new Point(136, 170);
             txtNom.Name = "txtNom";
             txtNom.Size = new Size(193, 27);
             txtNom.TabIndex = 2;
@@ -113,7 +117,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(49, 122);
+            label5.Location = new Point(136, 210);
             label5.Name = "label5";
             label5.Size = new Size(60, 20);
             label5.TabIndex = 20;
@@ -121,7 +125,7 @@
             // 
             // txtPrenom
             // 
-            txtPrenom.Location = new Point(129, 119);
+            txtPrenom.Location = new Point(136, 233);
             txtPrenom.Name = "txtPrenom";
             txtPrenom.Size = new Size(193, 27);
             txtPrenom.TabIndex = 3;
@@ -129,7 +133,7 @@
             // btnConnecter
             // 
             btnConnecter.Font = new Font("Segoe UI", 8F);
-            btnConnecter.Location = new Point(295, 6);
+            btnConnecter.Location = new Point(182, 401);
             btnConnecter.Name = "btnConnecter";
             btnConnecter.Size = new Size(89, 23);
             btnConnecter.TabIndex = 6;
@@ -141,7 +145,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(396, 277);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(530, 473);
             Controls.Add(btnConnecter);
             Controls.Add(label5);
             Controls.Add(txtPrenom);

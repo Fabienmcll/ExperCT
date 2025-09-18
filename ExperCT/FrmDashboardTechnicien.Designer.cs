@@ -36,10 +36,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(27, 118);
             label1.Name = "label1";
-            label1.Size = new Size(272, 20);
+            label1.Size = new Size(346, 25);
             label1.TabIndex = 0;
             label1.Text = "Carte grise des véhicules a controler : ";
             // 
@@ -54,19 +54,23 @@
             // 
             // btnNouveauControle
             // 
+            btnNouveauControle.BackColor = SystemColors.HotTrack;
+            btnNouveauControle.FlatStyle = FlatStyle.Flat;
             btnNouveauControle.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNouveauControle.ForeColor = SystemColors.ButtonFace;
             btnNouveauControle.Location = new Point(662, 153);
             btnNouveauControle.Name = "btnNouveauControle";
             btnNouveauControle.Size = new Size(155, 47);
             btnNouveauControle.TabIndex = 2;
             btnNouveauControle.Text = "Nouveau contrôle technique";
-            btnNouveauControle.UseVisualStyleBackColor = true;
+            btnNouveauControle.UseVisualStyleBackColor = false;
             btnNouveauControle.Click += btnNouveauControle_Click;
             // 
             // FrmDashboardTechnicien
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(892, 547);
             Controls.Add(btnNouveauControle);
             Controls.Add(lbCarteGrise);

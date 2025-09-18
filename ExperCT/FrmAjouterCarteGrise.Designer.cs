@@ -44,12 +44,13 @@
             btnAjouter = new Button();
             label8 = new Label();
             dateCirculation = new DateTimePicker();
+            label9 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(126, 86);
+            label1.Location = new Point(159, 89);
             label1.Name = "label1";
             label1.Size = new Size(184, 20);
             label1.TabIndex = 0;
@@ -59,7 +60,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(126, 137);
+            label2.Location = new Point(159, 137);
             label2.Name = "label2";
             label2.Size = new Size(60, 20);
             label2.TabIndex = 1;
@@ -69,7 +70,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(126, 197);
+            label3.Location = new Point(159, 193);
             label3.Name = "label3";
             label3.Size = new Size(60, 20);
             label3.TabIndex = 2;
@@ -89,7 +90,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(126, 254);
+            label5.Location = new Point(159, 247);
             label5.Name = "label5";
             label5.Size = new Size(72, 20);
             label5.TabIndex = 4;
@@ -99,7 +100,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(126, 299);
+            label6.Location = new Point(159, 299);
             label6.Name = "label6";
             label6.Size = new Size(72, 20);
             label6.TabIndex = 5;
@@ -109,7 +110,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(126, 341);
+            label7.Location = new Point(159, 345);
             label7.Name = "label7";
             label7.Size = new Size(94, 20);
             label7.TabIndex = 6;
@@ -132,21 +133,21 @@
             // 
             // txtModel
             // 
-            txtModel.Location = new Point(359, 197);
+            txtModel.Location = new Point(359, 190);
             txtModel.Name = "txtModel";
             txtModel.Size = new Size(225, 27);
             txtModel.TabIndex = 9;
             // 
             // txtCodeVin
             // 
-            txtCodeVin.Location = new Point(359, 247);
+            txtCodeVin.Location = new Point(359, 244);
             txtCodeVin.Name = "txtCodeVin";
             txtCodeVin.Size = new Size(225, 27);
             txtCodeVin.TabIndex = 10;
             // 
             // txtPuissance
             // 
-            txtPuissance.Location = new Point(359, 296);
+            txtPuissance.Location = new Point(359, 292);
             txtPuissance.Name = "txtPuissance";
             txtPuissance.Size = new Size(225, 27);
             txtPuissance.TabIndex = 11;
@@ -160,18 +161,22 @@
             // 
             // btnAjouter
             // 
-            btnAjouter.Location = new Point(395, 434);
+            btnAjouter.BackColor = SystemColors.HotTrack;
+            btnAjouter.FlatStyle = FlatStyle.Flat;
+            btnAjouter.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAjouter.ForeColor = SystemColors.ButtonHighlight;
+            btnAjouter.Location = new Point(359, 439);
             btnAjouter.Name = "btnAjouter";
-            btnAjouter.Size = new Size(157, 28);
+            btnAjouter.Size = new Size(158, 42);
             btnAjouter.TabIndex = 13;
             btnAjouter.Text = "Ajouter";
-            btnAjouter.UseVisualStyleBackColor = true;
+            btnAjouter.UseVisualStyleBackColor = false;
             btnAjouter.Click += btnAjouter_Click;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(126, 393);
+            label8.Location = new Point(153, 393);
             label8.Name = "label8";
             label8.Size = new Size(190, 20);
             label8.TabIndex = 14;
@@ -185,11 +190,23 @@
             dateCirculation.Size = new Size(225, 27);
             dateCirculation.TabIndex = 15;
             // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label9.Location = new Point(282, 23);
+            label9.Name = "label9";
+            label9.Size = new Size(216, 25);
+            label9.TabIndex = 16;
+            label9.Text = "Ajouter une carte grise";
+            // 
             // FrmAjouterCarteGrise
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 511);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(791, 511);
+            Controls.Add(label9);
             Controls.Add(dateCirculation);
             Controls.Add(label8);
             Controls.Add(btnAjouter);
@@ -233,5 +250,6 @@
         private Button btnAjouter;
         private Label label8;
         private DateTimePicker dateCirculation;
+        private Label label9;
     }
 }

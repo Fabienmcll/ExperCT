@@ -35,18 +35,19 @@
             label3 = new Label();
             btnConnexion = new Button();
             btnInscrire = new Button();
+            label4 = new Label();
             SuspendLayout();
             // 
             // txtMail
             // 
-            txtMail.Location = new Point(137, 92);
+            txtMail.Location = new Point(198, 129);
             txtMail.Name = "txtMail";
             txtMail.Size = new Size(193, 27);
             txtMail.TabIndex = 0;
             // 
             // txtMotDePasse
             // 
-            txtMotDePasse.Location = new Point(137, 136);
+            txtMotDePasse.Location = new Point(198, 189);
             txtMotDePasse.Name = "txtMotDePasse";
             txtMotDePasse.Size = new Size(193, 27);
             txtMotDePasse.TabIndex = 1;
@@ -55,7 +56,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(75, 95);
+            label1.Location = new Point(198, 106);
             label1.Name = "label1";
             label1.Size = new Size(46, 20);
             label1.TabIndex = 2;
@@ -64,7 +65,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(23, 139);
+            label2.Location = new Point(198, 166);
             label2.Name = "label2";
             label2.Size = new Size(98, 20);
             label2.TabIndex = 3;
@@ -74,7 +75,7 @@
             // 
             label3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label3.AutoSize = true;
-            label3.Location = new Point(104, 22);
+            label3.Location = new Point(123, 318);
             label3.Name = "label3";
             label3.Size = new Size(235, 20);
             label3.TabIndex = 4;
@@ -82,18 +83,22 @@
             // 
             // btnConnexion
             // 
-            btnConnexion.Location = new Point(154, 169);
+            btnConnexion.BackColor = SystemColors.HotTrack;
+            btnConnexion.FlatStyle = FlatStyle.Flat;
+            btnConnexion.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnConnexion.ForeColor = Color.White;
+            btnConnexion.Location = new Point(210, 240);
             btnConnexion.Name = "btnConnexion";
-            btnConnexion.Size = new Size(159, 34);
+            btnConnexion.Size = new Size(159, 49);
             btnConnexion.TabIndex = 5;
             btnConnexion.Text = "Me connecter";
-            btnConnexion.UseVisualStyleBackColor = true;
+            btnConnexion.UseVisualStyleBackColor = false;
             btnConnexion.Click += btnConnexion_Click;
             // 
             // btnInscrire
             // 
             btnInscrire.Font = new Font("Segoe UI", 8F);
-            btnInscrire.Location = new Point(357, 17);
+            btnInscrire.Location = new Point(364, 318);
             btnInscrire.Name = "btnInscrire";
             btnInscrire.Size = new Size(75, 23);
             btnInscrire.TabIndex = 6;
@@ -101,11 +106,23 @@
             btnInscrire.UseVisualStyleBackColor = true;
             btnInscrire.Click += btnInscrire_Click;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(226, 47);
+            label4.Name = "label4";
+            label4.Size = new Size(110, 25);
+            label4.TabIndex = 7;
+            label4.Text = "Connexion";
+            // 
             // FrmConnexionClient
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(439, 278);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(594, 399);
+            Controls.Add(label4);
             Controls.Add(btnInscrire);
             Controls.Add(btnConnexion);
             Controls.Add(label3);
@@ -130,5 +147,6 @@
         private Label label3;
         private Button btnConnexion;
         private Button btnInscrire;
+        private Label label4;
     }
 }

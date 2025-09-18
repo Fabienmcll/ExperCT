@@ -49,7 +49,6 @@ namespace ExperCT
                 string mdpHash = HashPassword(txtMotDePasse.Text.Trim());
                 if (mdpHash == technicienExist.Mdp)
                 {
-                    MessageBox.Show("T'es connecté");
                     SessionManager.LoginTechnicien(technicienExist);
                     FrmDashboardTechnicien frmDashboardTechnicien = new FrmDashboardTechnicien();
                     frmDashboardTechnicien.Show();

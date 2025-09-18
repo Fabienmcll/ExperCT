@@ -121,7 +121,8 @@ namespace ExperCT
                         db.SaveChanges();
                         MessageBox.Show("Contrôle technique créer !");
                     }
-                } else
+                }
+                else
                 {
                     using (ExperCtContext db = new ExperCtContext())
                     {
@@ -140,10 +141,16 @@ namespace ExperCT
                 }
                 this.Close();
 
-            } catch (Exception erreur)
+            }
+            catch (Exception erreur)
             {
                 MessageBox.Show("Erreur chef " + erreur.Message);
             }
-    }
+        }
+
+        private void btnAnnuler_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
