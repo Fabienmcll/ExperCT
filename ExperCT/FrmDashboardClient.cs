@@ -79,7 +79,8 @@ namespace ExperCT
 
         private void lsbControleTechnique_DoubleClick(object sender, EventArgs e)
         {
-            MessageBox.Show("Double click");
+            FrmClientControleTechnique frmClientControleTechnique = new FrmClientControleTechnique(lsbControleTechnique.SelectedItem as ContrôleTechnique);
+            frmClientControleTechnique.Show();
         }
     }
 }
