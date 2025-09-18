@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnConnexion = new Button();
+            btnInscription = new Button();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -41,14 +41,15 @@
             btnConnecter = new Button();
             SuspendLayout();
             // 
-            // btnConnexion
+            // btnInscription
             // 
-            btnConnexion.Location = new Point(145, 185);
-            btnConnexion.Name = "btnConnexion";
-            btnConnexion.Size = new Size(159, 34);
-            btnConnexion.TabIndex = 16;
-            btnConnexion.Text = "M'inscrire";
-            btnConnexion.UseVisualStyleBackColor = true;
+            btnInscription.Location = new Point(145, 185);
+            btnInscription.Name = "btnInscription";
+            btnInscription.Size = new Size(159, 34);
+            btnInscription.TabIndex = 5;
+            btnInscription.Text = "M'inscrire";
+            btnInscription.UseVisualStyleBackColor = true;
+            btnInscription.Click += btnInscription_Click;
             // 
             // label3
             // 
@@ -83,7 +84,7 @@
             txtMotDePasse.Location = new Point(129, 152);
             txtMotDePasse.Name = "txtMotDePasse";
             txtMotDePasse.Size = new Size(193, 27);
-            txtMotDePasse.TabIndex = 12;
+            txtMotDePasse.TabIndex = 4;
             txtMotDePasse.UseSystemPasswordChar = true;
             // 
             // txtMail
@@ -107,7 +108,7 @@
             txtNom.Location = new Point(129, 86);
             txtNom.Name = "txtNom";
             txtNom.Size = new Size(193, 27);
-            txtNom.TabIndex = 17;
+            txtNom.TabIndex = 2;
             // 
             // label5
             // 
@@ -123,7 +124,7 @@
             txtPrenom.Location = new Point(129, 119);
             txtPrenom.Name = "txtPrenom";
             txtPrenom.Size = new Size(193, 27);
-            txtPrenom.TabIndex = 19;
+            txtPrenom.TabIndex = 3;
             // 
             // btnConnecter
             // 
@@ -131,7 +132,7 @@
             btnConnecter.Location = new Point(295, 6);
             btnConnecter.Name = "btnConnecter";
             btnConnecter.Size = new Size(89, 23);
-            btnConnecter.TabIndex = 21;
+            btnConnecter.TabIndex = 6;
             btnConnecter.Text = "Me connecter";
             btnConnecter.UseVisualStyleBackColor = true;
             btnConnecter.Click += btnConnecter_Click;
@@ -146,7 +147,7 @@
             Controls.Add(txtPrenom);
             Controls.Add(label4);
             Controls.Add(txtNom);
-            Controls.Add(btnConnexion);
+            Controls.Add(btnInscription);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -162,7 +163,7 @@
 
         #endregion
 
-        private Button btnConnexion;
+        private Button btnInscription;
         private Label label3;
         private Label label2;
         private Label label1;

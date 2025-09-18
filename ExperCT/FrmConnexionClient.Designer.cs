@@ -87,6 +87,7 @@
             btnConnexion.TabIndex = 5;
             btnConnexion.Text = "Me connecter";
             btnConnexion.UseVisualStyleBackColor = true;
+            btnConnexion.Click += btnConnexion_Click;
             // 
             // btnInscrire
             // 
