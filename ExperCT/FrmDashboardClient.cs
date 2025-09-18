@@ -55,5 +55,31 @@ namespace ExperCT
                 LoadCartes();
             }
         }
+
+        private void lsbCarteGrise_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lsbControleTechnique.Items.Clear();
+            CarteGrise selectedCarteGrise = lsbCarteGrise.SelectedItem as CarteGrise;
+            try
+            {
+                using (ExperCtContext db = new ExperCtContext())
+                {
+                    List<ContrôleTechnique> controleTechniques = db.ContrôleTechniques.Where(o => o.IdCarteGrise == selectedCarteGrise.IdCarteGrise).ToList();
+                    foreach (ContrôleTechnique controle in controleTechniques)
+                    {
+                        lsbControleTechnique.Items.Add(controle);
+                    }
+                }
+            }
+            catch (Exception erreur)
+            {
+                MessageBox.Show(erreur.Message);
+            }
+        }
+
+        private void lsbControleTechnique_DoubleClick(object sender, EventArgs e)
+        {
+            MessageBox.Show("Double click");
+        }
     }
 }

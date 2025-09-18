@@ -53,8 +53,9 @@
             lsbCarteGrise.ItemHeight = 20;
             lsbCarteGrise.Location = new Point(236, 156);
             lsbCarteGrise.Name = "lsbCarteGrise";
-            lsbCarteGrise.Size = new Size(323, 324);
+            lsbCarteGrise.Size = new Size(364, 324);
             lsbCarteGrise.TabIndex = 1;
+            lsbCarteGrise.SelectedIndexChanged += lsbCarteGrise_SelectedIndexChanged;
             // 
             // label2
             // 
@@ -72,8 +73,9 @@
             lsbControleTechnique.ItemHeight = 20;
             lsbControleTechnique.Location = new Point(633, 156);
             lsbControleTechnique.Name = "lsbControleTechnique";
-            lsbControleTechnique.Size = new Size(187, 324);
+            lsbControleTechnique.Size = new Size(207, 324);
             lsbControleTechnique.TabIndex = 3;
+            lsbControleTechnique.DoubleClick += lsbControleTechnique_DoubleClick;
             // 
             // label3
             // 
