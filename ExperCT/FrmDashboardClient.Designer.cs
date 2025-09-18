@@ -53,7 +53,7 @@
             lsbCarteGrise.ItemHeight = 20;
             lsbCarteGrise.Location = new Point(236, 156);
             lsbCarteGrise.Name = "lsbCarteGrise";
-            lsbCarteGrise.Size = new Size(248, 324);
+            lsbCarteGrise.Size = new Size(323, 324);
             lsbCarteGrise.TabIndex = 1;
             // 
             // label2
@@ -103,6 +103,7 @@
             btnModifier.TabIndex = 6;
             btnModifier.Text = "Modifier";
             btnModifier.UseVisualStyleBackColor = true;
+            btnModifier.Click += btnModifier_Click;
             // 
             // FrmDashboardClient
             // 

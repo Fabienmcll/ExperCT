@@ -45,5 +45,15 @@ namespace ExperCT
         {
             LoadCartes();
         }
+
+        private void btnModifier_Click(object sender, EventArgs e)
+        {
+
+            FrmAjouterCarteGrise frmModify = new FrmAjouterCarteGrise(lsbCarteGrise.SelectedItem as CarteGrise);
+            if (frmModify.ShowDialog() == DialogResult.OK)
+            {
+                LoadCartes();
+            }
+        }
     }
 }

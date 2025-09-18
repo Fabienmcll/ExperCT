@@ -25,6 +25,16 @@ namespace ExperCT
             InitializeComponent();
             isModify = true;
             carteSelected = carteGriseSelected;
+            txtCodeVin.Text = carteSelected.CodeVin.ToString();
+            txtMarque.Text = carteSelected.Marque.ToString();
+            txtModel.Text = carteSelected.Modele.ToString();
+            txtMotorisation.Text = carteSelected.Motorisation.ToString();
+            txtNumeroImmatriculation.Text = carteSelected.NumeroImmatriculation.ToString();
+            txtPuissance.Text = carteSelected.Puissance.ToString();
+            dateCirculation.Value = carteSelected.DateMiseCirculation;
+
+            btnAjouter.Text = "Modifier";
+
         }
 
         private void FrmAjouterCarteGrise_Load(object sender, EventArgs e)
@@ -46,7 +56,41 @@ namespace ExperCT
 
         private void modifyCarte()
         {
-
+            if (txtCodeVin.Text.Trim() == "" || txtMarque.Text.Trim() == "" || txtModel.Text.Trim() == "" || txtMotorisation.Text.Trim() == "" || txtNumeroImmatriculation.Text.Trim() == "" || txtPuissance.Text.Trim() == "")
+            {
+                MessageBox.Show("Veuillez remplir tous les champs");
+                return;
+            }
+            try
+            {
+                using (ExperCtContext db = new ExperCtContext())
+                {
+                    CarteGrise carteToModify = db.CarteGrises.Where(o => o.IdCarteGrise == carteSelected.IdCarteGrise).FirstOrDefault();
+                    carteToModify.Marque = txtMarque.Text.Trim();
+                    carteToModify.NumeroImmatriculation = txtNumeroImmatriculation.Text.Trim();
+                    carteToModify.Modele = txtModel.Text.Trim();
+                    carteToModify.CodeVin = txtCodeVin.Text.Trim();
+                    if (int.TryParse(txtPuissance.Text.Trim(), out int puissance))
+                    {
+                        carteToModify.Puissance = puissance;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Vérifiez le format de la puissance");
+                        return;
+                    }
+                    carteToModify.DateMiseCirculation = dateCirculation.Value;
+                    carteToModify.Motorisation = txtMotorisation.Text.Trim();
+                    db.SaveChanges();
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
+                }
+            }
+            catch (Exception erreur)
+            {
+                MessageBox.Show(erreur.Message);
+            }
+            
         }
 
         private void createCarte()
