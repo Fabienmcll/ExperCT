@@ -122,7 +122,6 @@ public partial class ExperCtContext : DbContext
 
             entity.HasOne(d => d.IdDefaillanceNavigation).WithMany(p => p.ContrôleTechniques)
                 .HasForeignKey(d => d.IdDefaillance)
-                .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("FK__ContrôleT__IdDef__398D8EEE");
 
             entity.HasOne(d => d.IdTechnicienNavigation).WithMany(p => p.ContrôleTechniques)

@@ -11,13 +11,13 @@ public partial class ContrôleTechnique
 
     public string NumReference { get; set; } = null!;
 
-    public int IdDefaillance { get; set; }
+    public int? IdDefaillance { get; set; }
 
     public int IdCarteGrise { get; set; }
 
     public int IdTechnicien { get; set; }
 
-    public virtual Defaillance IdDefaillanceNavigation { get; set; } = null!;
+    public virtual Defaillance? IdDefaillanceNavigation { get; set; }
 
     public virtual Technicien IdTechnicienNavigation { get; set; } = null!;
 }
