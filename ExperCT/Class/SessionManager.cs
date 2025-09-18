@@ -1,4 +1,5 @@
-﻿using ExperCT.Models;
+﻿using Azure.Core;
+using ExperCT.Models;
 
 public static class SessionManager
 {
@@ -17,5 +18,16 @@ public static class SessionManager
     public static void LoginClient (Client client)
     {
         CurrentClient = client;
+    }
+
+    public static void LoginTechnicien (Technicien technicien)
+    {
+        CurrentTechnicien = technicien;
+    }
+
+    public static void Logout ()
+    {
+        CurrentClient = null;
+        CurrentTechnicien = null;
     }
 }

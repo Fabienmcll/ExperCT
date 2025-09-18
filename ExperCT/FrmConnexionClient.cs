@@ -57,6 +57,7 @@ namespace ExperCT
                 if (mdpHash == clientExist.Mdp)
                 {
                     MessageBox.Show("T'es connecté");
+                    SessionManager.LoginClient(clientExist);
                 }
                 else
                 {
