@@ -16,6 +16,12 @@
     <Compile Update="FrmConnexionTechnicien.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmDashboardTechnicien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmNouveauControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmPrincipale.cs">
       <SubType>Form</SubType>
     </Compile>
