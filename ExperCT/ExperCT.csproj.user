@@ -4,6 +4,9 @@
     <Compile Update="FrmAjouterCarteGrise.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmClientControleTechnique.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmDashboardClient.cs">
       <SubType>Form</SubType>
     </Compile>
