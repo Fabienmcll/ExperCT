@@ -93,6 +93,7 @@
             btnAjouter.TabIndex = 5;
             btnAjouter.Text = "Ajouter";
             btnAjouter.UseVisualStyleBackColor = true;
+            btnAjouter.Click += btnAjouter_Click;
             // 
             // btnModifier
             // 

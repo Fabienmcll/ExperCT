@@ -16,5 +16,11 @@ namespace ExperCT
         {
             InitializeComponent();
         }
+
+        private void btnAjouter_Click(object sender, EventArgs e)
+        {
+            FrmAjouterCarteGrise frmAjouterCarteGrise = new FrmAjouterCarteGrise();
+            frmAjouterCarteGrise.Show();
+        }
     }
 }

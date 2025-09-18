@@ -56,8 +56,10 @@ namespace ExperCT
                 string mdpHash = HashPassword(txtMotDePasse.Text.Trim());
                 if (mdpHash == clientExist.Mdp)
                 {
-                    MessageBox.Show("T'es connecté");
                     SessionManager.LoginClient(clientExist);
+                    FrmDashboardClient frmDashboardClient = new FrmDashboardClient();
+                    frmDashboardClient.Show();
+                    this.Hide();
                 }
                 else
                 {

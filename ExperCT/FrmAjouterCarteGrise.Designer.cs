@@ -41,6 +41,9 @@
             txtCodeVin = new TextBox();
             txtPuissance = new TextBox();
             txtMotorisation = new TextBox();
+            btnAjouter = new Button();
+            label8 = new Label();
+            dateCirculation = new DateTimePicker();
             SuspendLayout();
             // 
             // label1
@@ -150,16 +153,46 @@
             // 
             // txtMotorisation
             // 
-            txtMotorisation.Location = new Point(359, 341);
+            txtMotorisation.Location = new Point(359, 338);
             txtMotorisation.Name = "txtMotorisation";
             txtMotorisation.Size = new Size(225, 27);
             txtMotorisation.TabIndex = 12;
+            // 
+            // btnAjouter
+            // 
+            btnAjouter.Location = new Point(395, 434);
+            btnAjouter.Name = "btnAjouter";
+            btnAjouter.Size = new Size(157, 28);
+            btnAjouter.TabIndex = 13;
+            btnAjouter.Text = "Ajouter";
+            btnAjouter.UseVisualStyleBackColor = true;
+            btnAjouter.Click += btnAjouter_Click;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(126, 393);
+            label8.Name = "label8";
+            label8.Size = new Size(190, 20);
+            label8.TabIndex = 14;
+            label8.Text = "Date de mise en circulation";
+            label8.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // dateCirculation
+            // 
+            dateCirculation.Location = new Point(359, 388);
+            dateCirculation.Name = "dateCirculation";
+            dateCirculation.Size = new Size(225, 27);
+            dateCirculation.TabIndex = 15;
             // 
             // FrmAjouterCarteGrise
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 511);
+            Controls.Add(dateCirculation);
+            Controls.Add(label8);
+            Controls.Add(btnAjouter);
             Controls.Add(txtMotorisation);
             Controls.Add(txtPuissance);
             Controls.Add(txtCodeVin);
@@ -197,5 +230,8 @@
         private TextBox txtCodeVin;
         private TextBox txtPuissance;
         private TextBox txtMotorisation;
+        private Button btnAjouter;
+        private Label label8;
+        private DateTimePicker dateCirculation;
     }
 }
