@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExperCT.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -46,7 +47,35 @@ namespace ExperCT
             }
             try
             {
+                Client clientExist = checkUserExist(txtMail.Text.Trim());
+                if(clientExist == null)
+                {
+                    MessageBox.Show("Cet utilisateur n'existe pas");
+                    return;
+                }
+                string mdpHash = HashPassword(txtMotDePasse.Text.Trim());
+                if (mdpHash == clientExist.Mdp)
+                {
+                    MessageBox.Show("T'es connecté");
+                }
+                else
+                {
+                    MessageBox.Show("Mot de passe incorrect");
+                }
 
+            }
+            catch (Exception erreur)
+            {
+                MessageBox.Show(erreur.Message);
+            }
+        }
+
+        private Client checkUserExist (string mail)
+        {
+            using (ExperCtContext db = new ExperCtContext())
+            {
+                Client clientToCheck = db.Clients.Where(o => o.Mail == mail).FirstOrDefault();
+                return clientToCheck;
             }
         }
     }
