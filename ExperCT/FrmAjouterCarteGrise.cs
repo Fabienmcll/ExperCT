@@ -81,7 +81,8 @@ namespace ExperCT
                 {
                     db.CarteGrises.Add(carteGrise);
                     db.SaveChanges();
-                    MessageBox.Show("Ajouté");
+                    this.DialogResult = DialogResult.OK;
+                    this.Close();
                 }
             }
             catch (Exception erreur)

@@ -53,7 +53,7 @@
             lsbCarteGrise.ItemHeight = 20;
             lsbCarteGrise.Location = new Point(236, 156);
             lsbCarteGrise.Name = "lsbCarteGrise";
-            lsbCarteGrise.Size = new Size(187, 324);
+            lsbCarteGrise.Size = new Size(248, 324);
             lsbCarteGrise.TabIndex = 1;
             // 
             // label2
@@ -120,6 +120,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "FrmDashboardClient";
             Text = "Dashboard";
+            Load += FrmDashboardClient_Load;
             ResumeLayout(false);
             PerformLayout();
         }

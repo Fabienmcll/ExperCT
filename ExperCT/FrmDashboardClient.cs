@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ExperCT.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,7 +21,29 @@ namespace ExperCT
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             FrmAjouterCarteGrise frmAjouterCarteGrise = new FrmAjouterCarteGrise();
-            frmAjouterCarteGrise.Show();
+            if (frmAjouterCarteGrise.ShowDialog() == DialogResult.OK)
+            {
+                LoadCartes();
+            }
+
+        }
+
+        private void LoadCartes()
+        {
+            lsbCarteGrise.Items.Clear();
+            using (ExperCtContext db = new ExperCtContext())
+            {
+                List<CarteGrise> listCartes = db.CarteGrises.Where(o => o.IdClient == SessionManager.CurrentClient.IdClient).ToList();
+                foreach (CarteGrise carte in listCartes)
+                {
+                    lsbCarteGrise.Items.Add(carte);
+                }
+            }
+        }
+
+        private void FrmDashboardClient_Load(object sender, EventArgs e)
+        {
+            LoadCartes();
         }
     }
 }
