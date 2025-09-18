@@ -35,6 +35,7 @@
             label3 = new Label();
             btnAjouter = new Button();
             btnModifier = new Button();
+            btnDeconnexion = new Button();
             SuspendLayout();
             // 
             // label1
@@ -107,11 +108,22 @@
             btnModifier.UseVisualStyleBackColor = true;
             btnModifier.Click += btnModifier_Click;
             // 
+            // btnDeconnexion
+            // 
+            btnDeconnexion.Location = new Point(12, 477);
+            btnDeconnexion.Name = "btnDeconnexion";
+            btnDeconnexion.Size = new Size(107, 35);
+            btnDeconnexion.TabIndex = 7;
+            btnDeconnexion.Text = "Deconnexion";
+            btnDeconnexion.UseVisualStyleBackColor = true;
+            btnDeconnexion.Click += btnDeconnexion_Click;
+            // 
             // FrmDashboardClient
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(971, 524);
+            Controls.Add(btnDeconnexion);
             Controls.Add(btnModifier);
             Controls.Add(btnAjouter);
             Controls.Add(label3);
@@ -137,5 +149,6 @@
         private Label label3;
         private Button btnAjouter;
         private Button btnModifier;
+        private Button btnDeconnexion;
     }
 }

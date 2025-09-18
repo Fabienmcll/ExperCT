@@ -67,7 +67,12 @@ namespace ExperCT
 
                     db.Clients.Add(newClient);
                     db.SaveChanges();
-                    MessageBox.Show("c'est bon");
+                    Client thisClient  = db.Clients.Where(o => o.Mail == newClient.Mail).FirstOrDefault();
+                    SessionManager.LoginClient(thisClient);
+                    FrmDashboardClient frmDashboardClient = new FrmDashboardClient();
+                    frmDashboardClient.Show();
+                    this.Hide();
+
                 }
 
             } catch (Exception erreur)

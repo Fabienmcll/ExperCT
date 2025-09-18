@@ -32,7 +32,6 @@
             lblNumRef = new Label();
             label2 = new Label();
             lblDatePassage = new Label();
-            label3 = new Label();
             label4 = new Label();
             lblDefaillance = new Label();
             label5 = new Label();
@@ -42,14 +41,17 @@
             lblCriticite = new Label();
             btnFermer = new Button();
             lblTechnicien = new Label();
+            groupBox1 = new GroupBox();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(238, 9);
             label1.Name = "label1";
-            label1.Size = new Size(142, 20);
+            label1.Size = new Size(150, 20);
             label1.TabIndex = 0;
             label1.Text = "Controle technique :";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -57,6 +59,7 @@
             // lblNumRef
             // 
             lblNumRef.AutoSize = true;
+            lblNumRef.Font = new Font("Segoe UI", 11.25F, FontStyle.Underline, GraphicsUnit.Point, 0);
             lblNumRef.Location = new Point(475, 9);
             lblNumRef.Name = "lblNumRef";
             lblNumRef.Size = new Size(50, 20);
@@ -66,9 +69,10 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(238, 46);
             label2.Name = "label2";
-            label2.Size = new Size(86, 20);
+            label2.Size = new Size(91, 20);
             label2.TabIndex = 2;
             label2.Text = "Effectué le :";
             // 
@@ -81,28 +85,20 @@
             lblDatePassage.TabIndex = 3;
             lblDatePassage.Text = "label2";
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(12, 134);
-            label3.Name = "label3";
-            label3.Size = new Size(113, 20);
-            label3.TabIndex = 4;
-            label3.Text = "Compte-rendu :";
-            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(50, 184);
+            label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.Location = new Point(62, 41);
             label4.Name = "label4";
-            label4.Size = new Size(91, 20);
+            label4.Size = new Size(94, 20);
             label4.TabIndex = 5;
             label4.Text = "Défaillance :";
             // 
             // lblDefaillance
             // 
             lblDefaillance.AutoSize = true;
-            lblDefaillance.Location = new Point(158, 184);
+            lblDefaillance.Location = new Point(170, 41);
             lblDefaillance.Name = "lblDefaillance";
             lblDefaillance.Size = new Size(50, 20);
             lblDefaillance.TabIndex = 6;
@@ -111,9 +107,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(12, 226);
+            label5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label5.Location = new Point(24, 83);
             label5.Name = "label5";
-            label5.Size = new Size(129, 20);
+            label5.Size = new Size(137, 20);
             label5.TabIndex = 7;
             label5.Text = "Point de contrôle :";
             label5.TextAlign = ContentAlignment.TopCenter;
@@ -121,7 +118,7 @@
             // lblPointControle
             // 
             lblPointControle.AutoSize = true;
-            lblPointControle.Location = new Point(158, 226);
+            lblPointControle.Location = new Point(170, 83);
             lblPointControle.Name = "lblPointControle";
             lblPointControle.Size = new Size(50, 20);
             lblPointControle.TabIndex = 8;
@@ -130,9 +127,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(331, 184);
+            label6.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(343, 41);
             label6.Name = "label6";
-            label6.Size = new Size(67, 20);
+            label6.Size = new Size(71, 20);
             label6.TabIndex = 9;
             label6.Text = "Criticité :";
             label6.TextAlign = ContentAlignment.TopCenter;
@@ -149,7 +147,7 @@
             // lblCriticite
             // 
             lblCriticite.AutoSize = true;
-            lblCriticite.Location = new Point(404, 184);
+            lblCriticite.Location = new Point(416, 41);
             lblCriticite.Name = "lblCriticite";
             lblCriticite.Size = new Size(50, 20);
             lblCriticite.TabIndex = 11;
@@ -174,21 +172,30 @@
             lblTechnicien.TabIndex = 13;
             lblTechnicien.Text = "nom - prenom";
             // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(label4);
+            groupBox1.Controls.Add(lblDefaillance);
+            groupBox1.Controls.Add(lblCriticite);
+            groupBox1.Controls.Add(label5);
+            groupBox1.Controls.Add(lblPointControle);
+            groupBox1.Controls.Add(label6);
+            groupBox1.Location = new Point(12, 108);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(862, 141);
+            groupBox1.TabIndex = 14;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Compte-rendu";
+            // 
             // FrmClientControleTechnique
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(886, 308);
+            Controls.Add(groupBox1);
             Controls.Add(lblTechnicien);
             Controls.Add(btnFermer);
-            Controls.Add(lblCriticite);
             Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(lblPointControle);
-            Controls.Add(label5);
-            Controls.Add(lblDefaillance);
-            Controls.Add(label4);
-            Controls.Add(label3);
             Controls.Add(lblDatePassage);
             Controls.Add(label2);
             Controls.Add(lblNumRef);
@@ -198,6 +205,8 @@
             Name = "FrmClientControleTechnique";
             Text = "Rapport contrôle technique";
             Load += FrmClientControleTechnique_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,7 +217,6 @@
         private Label lblNumRef;
         private Label label2;
         private Label lblDatePassage;
-        private Label label3;
         private Label label4;
         private Label lblDefaillance;
         private Label label5;
@@ -218,5 +226,6 @@
         private Label lblCriticite;
         private Button btnFermer;
         private Label lblTechnicien;
+        private GroupBox groupBox1;
     }
 }
