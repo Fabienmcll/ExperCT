@@ -50,6 +50,7 @@
             txtMotDePasse.Name = "txtMotDePasse";
             txtMotDePasse.Size = new Size(193, 27);
             txtMotDePasse.TabIndex = 1;
+            txtMotDePasse.UseSystemPasswordChar = true;
             // 
             // label1
             // 

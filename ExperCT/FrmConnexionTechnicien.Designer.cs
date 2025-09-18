@@ -32,8 +32,10 @@
             label2 = new Label();
             label1 = new Label();
             txtMotDePasse = new TextBox();
-            txtMail = new TextBox();
+            txtNom = new TextBox();
             btnConnexion = new Button();
+            label4 = new Label();
+            txtPrenom = new TextBox();
             SuspendLayout();
             // 
             // label3
@@ -49,7 +51,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(15, 150);
+            label2.Location = new Point(15, 177);
             label2.Name = "label2";
             label2.Size = new Size(98, 20);
             label2.TabIndex = 8;
@@ -58,46 +60,67 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(67, 106);
+            label1.Location = new Point(67, 103);
             label1.Name = "label1";
-            label1.Size = new Size(46, 20);
+            label1.Size = new Size(42, 20);
             label1.TabIndex = 7;
-            label1.Text = "Email";
+            label1.Text = "Nom";
             // 
             // txtMotDePasse
             // 
-            txtMotDePasse.Location = new Point(129, 147);
+            txtMotDePasse.Location = new Point(129, 174);
             txtMotDePasse.Name = "txtMotDePasse";
             txtMotDePasse.Size = new Size(193, 27);
             txtMotDePasse.TabIndex = 6;
+            txtMotDePasse.UseSystemPasswordChar = true;
             // 
-            // txtMail
+            // txtNom
             // 
-            txtMail.Location = new Point(129, 103);
-            txtMail.Name = "txtMail";
-            txtMail.Size = new Size(193, 27);
-            txtMail.TabIndex = 5;
+            txtNom.Location = new Point(129, 103);
+            txtNom.Name = "txtNom";
+            txtNom.Size = new Size(193, 27);
+            txtNom.TabIndex = 5;
             // 
             // btnConnexion
             // 
-            btnConnexion.Location = new Point(145, 180);
+            btnConnexion.Location = new Point(143, 233);
             btnConnexion.Name = "btnConnexion";
             btnConnexion.Size = new Size(159, 34);
             btnConnexion.TabIndex = 10;
             btnConnexion.Text = "Me connecter";
             btnConnexion.UseVisualStyleBackColor = true;
+            btnConnexion.Click += btnConnexion_Click;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(53, 148);
+            label4.Name = "label4";
+            label4.Size = new Size(60, 20);
+            label4.TabIndex = 12;
+            label4.Text = "Prénom";
+            label4.TextAlign = ContentAlignment.TopCenter;
+            // 
+            // txtPrenom
+            // 
+            txtPrenom.Location = new Point(129, 141);
+            txtPrenom.Name = "txtPrenom";
+            txtPrenom.Size = new Size(193, 27);
+            txtPrenom.TabIndex = 11;
             // 
             // FrmConnexionTechnicien
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(400, 240);
+            ClientSize = new Size(454, 326);
+            Controls.Add(label4);
+            Controls.Add(txtPrenom);
             Controls.Add(btnConnexion);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(txtMotDePasse);
-            Controls.Add(txtMail);
+            Controls.Add(txtNom);
             Font = new Font("Segoe UI", 11F);
             Margin = new Padding(3, 4, 3, 4);
             Name = "FrmConnexionTechnicien";
@@ -112,7 +135,9 @@
         private Label label2;
         private Label label1;
         private TextBox txtMotDePasse;
-        private TextBox txtMail;
+        private TextBox txtNom;
         private Button btnConnexion;
+        private Label label4;
+        private TextBox txtPrenom;
     }
 }
