@@ -83,5 +83,13 @@ namespace ExperCT
             FrmClientControleTechnique frmClientControleTechnique = new FrmClientControleTechnique(lsbControleTechnique.SelectedItem as ContrôleTechnique);
             frmClientControleTechnique.Show();
         }
+
+        private void btnDeconnexion_Click(object sender, EventArgs e)
+        {
+            SessionManager.Logout();
+            FrmConnexionClient frmConnexionClient = new FrmConnexionClient();
+            frmConnexionClient.Show();
+            this.Hide();
+        }
     }
 }

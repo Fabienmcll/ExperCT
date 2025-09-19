@@ -50,7 +50,7 @@
             label1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(176, 9);
             label1.Name = "label1";
-            label1.Size = new Size(150, 20);
+            label1.Size = new Size(142, 20);
             label1.TabIndex = 0;
             label1.Text = "Controle technique :";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -70,7 +70,7 @@
             label2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(176, 46);
             label2.Name = "label2";
-            label2.Size = new Size(91, 20);
+            label2.Size = new Size(86, 20);
             label2.TabIndex = 2;
             label2.Text = "Effectué le :";
             // 
@@ -99,7 +99,7 @@
             label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(163, 184);
             label4.Name = "label4";
-            label4.Size = new Size(94, 20);
+            label4.Size = new Size(91, 20);
             label4.TabIndex = 5;
             label4.Text = "Défaillance :";
             // 
@@ -118,7 +118,7 @@
             label5.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.Location = new Point(163, 226);
             label5.Name = "label5";
-            label5.Size = new Size(137, 20);
+            label5.Size = new Size(129, 20);
             label5.TabIndex = 7;
             label5.Text = "Point de contrôle :";
             label5.TextAlign = ContentAlignment.TopCenter;
@@ -138,7 +138,7 @@
             label6.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.Location = new Point(582, 184);
             label6.Name = "label6";
-            label6.Size = new Size(71, 20);
+            label6.Size = new Size(67, 20);
             label6.TabIndex = 9;
             label6.Text = "Criticité :";
             label6.TextAlign = ContentAlignment.TopCenter;
